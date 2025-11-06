@@ -61,19 +61,3 @@ if __name__ == "__main__":
         ch = decode(morseCodeTree, code)
         print(ch, end='')
     print()
-
-
-    # 테스트 프로그램
-if __name__ == "__main__":
-    morseCodeTree = make_morse_tree()
-    str = input("입력 문장 : ")
-    mlist = []
-    for ch in str:
-        code = encode(ch)
-        mlist.append(code)
-    print("Morse Code: ", mlist)
-    print("Decoding  : ", end='')
-    for code in mlist:
-        ch = decode(morseCodeTree, code)
-        print(ch, end='')
-    print()
